@@ -1,4 +1,4 @@
-
+### TASK 1 ###
 counterFor = 11
 for x in range(counterFor):
     print (x)
@@ -10,7 +10,7 @@ while counterWhile <= 10:
 
 
 
-###################################################
+### TASK 2 ###
 
 userInput = int(input("Input a number "))
 
