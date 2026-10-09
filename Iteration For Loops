@@ -1,0 +1,78 @@
+#Iterations for loops#
+
+# Unlike while loops, "for" loops are given a specific number of times to repeat
+
+# Alot of times we use the function range() when using for loops
+
+# range() creates a range of integers
+# inside the bracket
+# the numbers we put inside the bracket are called arguments
+
+# for number in range(1,5):
+#     print(number)
+
+# this will print everything but not including my last argument
+
+# this is a simular method of how we index strings
+
+# structure of a For Loops #
+# the word "for"
+# a loop control variable or counter
+# the word "in"
+# a way of setting the number of times the loop must repeat
+# a colon
+# indent on the next line
+
+# for number in range(1,5):
+#     print(number)
+# for number in range(1,5):
+#     print(number)
+# print(number)
+
+# same thing with a "while" loop:
+
+# counter = 1
+# while(counter < 5):
+#     print(counter)
+#     counter +=1
+# while(counter < 5):
+#     print(counter)
+#     counter +=1
+# print(counter)
+
+#the cloop control avriable here is not reset every time
+# (counter += 1)
+# reset every time in my "for " loop by the range() function
+
+#example
+#listing all the house numbers on Beneavin Rd
+
+# for num in range(50, 71):
+#     print(num, "Beneavin Rd")
+
+# amend the range() function to range(5) - note in a comment what happens
+
+# for num in range(5):
+#     print(num, "Beneavin Rd")
+# # prints 0-4 beneavin rd
+
+
+# amend the range() function to range(50, 71, 2) - note in a comment what happens
+
+# for num in range(50, 71, 2):
+#     print(num, "Beneavin Rd")
+# prints 50-70 Beneavin Rd in increments of 2
+
+
+# # amend the range() function to range(50, 71, -2) - note in a comment what happens
+
+# for num in range(71, 50, -1):
+#     print(num, "Beneavin Rd")
+# # # Nothing prints
+
+
+# when we use one argument python automatically assumes we want to start at 0 and will go up to but not include the argument we wrote in
+
+# when we use THREE arguments we are giving python out start point, our finish point and what is known as the step argument (how much we want to go up by)
+
+# We can use a minus number to work backwards (decrementing)
