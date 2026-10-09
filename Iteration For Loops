@@ -76,3 +76,50 @@
 # when we use THREE arguments we are giving python out start point, our finish point and what is known as the step argument (how much we want to go up by)
 
 # We can use a minus number to work backwards (decrementing)
+
+
+
+
+# Loop statements with "for" and strings
+
+# A useful aspect of a for loop is that it can be used to iterate through a string (i.e. go through the string, character by character) and preform the same set of instructions one character at a time
+
+# this is sometimes known as looping through an enumerative variable (a variable that contains more than one item - a string)
+
+# example #
+
+# inputText = "John28"
+# for character in inputText:
+#     print(character)
+# #this prints out every infividual letter on a single line
+# # character is just a variable name - ot can be anything
+
+
+# # worked example # 
+
+# sentence = input("Enter a sentence: ") # asks user for input
+# spaceCount = 0 # defines a variable
+# for character in sentence: # repeats for loop for every character in the sentence
+#     if character == " ": # if the current selected character is a space
+#         spaceCount+=1 # it will add 1 to space count
+# wordCount = spaceCount +1 # word count is defined as the space count plus 1
+# print("Number of spaces:", spaceCount)
+# print("Number of words:", wordCount)
+
+
+# Task 1
+# userInput = str(input("Enter a word "))
+# vowelCount = 0
+# for character in userInput:
+#     if character == "a" or character == "e" or character == "i" or character == "o" or character == "u":
+#         vowelCount+=1
+# print("There are ", vowelCount, "vowels")
+
+# Task 2
+sentenceInput = str(input("Input a sentence: "))
+Sentence = []
+for letter in sentenceInput:
+    Sentence.append(letter)
+print(Sentence)
+for i in len(Sentence):
+    print
