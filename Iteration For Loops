@@ -116,10 +116,10 @@
 # print("There are ", vowelCount, "vowels")
 
 # Task 2
-sentenceInput = str(input("Input a sentence: "))
-Sentence = []
-for letter in sentenceInput:
-    Sentence.append(letter)
-print(Sentence)
-for i in len(Sentence):
-    print
+# sentenceInput = str(input("Input a sentence: "))
+# Sentence = []
+# for letter in sentenceInput:
+#     Sentence.append(letter)
+# print(Sentence)
+# for i in len(Sentence):
+#     print
