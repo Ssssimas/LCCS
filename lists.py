@@ -122,15 +122,24 @@
 
 # We can use while or for loops to find the number of times the value 5 occurs
 
-myList = [1, 19, 27, 5, 8, 5, 9, 5]
-numSought = 5 # the value i want
-freqNum = 0 # frequency to record each occurence of the number
-counter = 0 # counter to control the number of times my loop is executed
+# myList = [1, 19, 27, 5, 8, 5, 9, 5]
+# numSought = 5 # the value i want
+# freqNum = 0 # frequency to record each occurence of the number
+# counter = 0 # counter to control the number of times my loop is executed
 
-while counter < len(myList):
-    if myList[counter] == numSought:
-        freqNum += 1
-        print("Found at index:", counter)
-    counter += 1
-print(freqNum)
-print(counter)
+# while counter < len(myList):
+#     if myList[counter] == numSought:
+#         freqNum += 1
+#         print("Found at index:", counter)
+#     counter += 1
+# print(freqNum)
+# print(counter)
+
+myList = []
+for _ in range(5):
+    myList.append(int(input("Input a number ")))
+print(myList)
+
+for x in range(len(myList)):
+    myList[x] +=1
+print(myList)
