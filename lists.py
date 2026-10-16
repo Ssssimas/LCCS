@@ -135,11 +135,43 @@
 # print(freqNum)
 # print(counter)
 
-myList = []
-for _ in range(5):
-    myList.append(int(input("Input a number ")))
-print(myList)
+# myList = []
+# for _ in range(5):
+#     myList.append(int(input("Input a number ")))
+# print(myList)
 
-for x in range(len(myList)):
-    myList[x] +=1
-print(myList)
+# for x in range(len(myList)):
+#     myList[x] +=1
+# print(myList)
+
+# Modifying items in a list using a while loop #
+
+# We are able to use while loops to check that no item
+# in a list has a balue less than something, e.g. 0
+# If the item in the list has a value less than this
+# can set it to 0
+
+# mylist = [-1, -19, 27, 8, -5, 9]
+# print(mylist) # prints my initial list so we can compare
+
+# counter = 0
+# while counter < len(mylist): # using len() so that i check allitems in my list
+#     if mylist[counter] < 0: # using [counter] as my index check
+#         mylist[counter] = 0 # changes item to 0 if less than 0
+#     counter+= 1 # adds 1 to counter
+# print(mylist) # prints changed list
+
+# Task #
+# Write a program that asks the user to input 5 numbers
+#  2 of these numbers should be negative (make sure to make that clear to the user)
+# Put these numbers in a list and use a while loop to swap the negative numbers to a positive 2#
+myList = []
+print("Input your 5 numbers, 2 of these should be negative")
+for _ in range(5):
+    myList.append(int(input("Input Your Number ")))
+print([myList])
+
+for counter in range(len(myList)):
+    if myList[counter] < 0:
+        myList[counter] = 2
+print([myList])
