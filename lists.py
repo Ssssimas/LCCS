@@ -164,14 +164,77 @@
 # Task #
 # Write a program that asks the user to input 5 numbers
 #  2 of these numbers should be negative (make sure to make that clear to the user)
-# Put these numbers in a list and use a while loop to swap the negative numbers to a positive 2#
-myList = []
-print("Input your 5 numbers, 2 of these should be negative")
-for _ in range(5):
-    myList.append(int(input("Input Your Number ")))
-print([myList])
+# Put these numbers in a list and use a while loop to swap the negative numbers to a positive 2
 
-for counter in range(len(myList)):
-    if myList[counter] < 0:
-        myList[counter] = 2
-print([myList])
+# myList = []
+# print("Input your 5 numbers, 2 of these should be negative")
+# for _ in range(5):
+#     myList.append(int(input("Input Your Number ")))
+# print([myList])
+
+# for counter in range(len(myList)):
+#     if myList[counter] < 0:
+#         myList[counter] = 2
+# print([myList])
+
+
+# using for loops with lists
+
+# # simple examples
+# myList = [-1, -19, 27, 8, -5, 9]
+# print(myList)
+# for item in myList: # word item here is just a variable
+#     #this variable could be any word you want
+#     print(item)
+# goes through each item individually and will print them out
+
+## List concatenation and Replication ##
+
+# Concatenation means to combine two or more things together
+# Concatenating 2 lists together:
+# myFlowers = ["Buttercup", "Daisy", "Rose", "Tuilip"]
+# myTrees = ["Oak", "Beech", "Hazel", "Birch"]
+# myNewList = myFlowers + myTrees
+# print(myNewList)
+
+# # we can also use concatenation to extend an existing list:
+# firstList = ["a", "e", "i", "o", "u"]
+# secondList = ["A", "E", "I", "O", "U"]
+# print(firstList)
+# firstList = firstList + secondList
+# print(firstList)
+
+# not creating a new variable, just "updating" my original
+
+# Replication # 
+
+# firstList = ["a", "e", "i", "o", "u"]
+# repFirstList = firstList * 2
+# print(repFirstList)
+# # prints out the contents of the list, in this case, twice
+
+## Entering an item into a list ##
+# petList = []
+# totalPets = int(input("How mant pets do you have? "))
+
+# if totalPets > 0:
+#     for pets in range(totalPets):
+#         name = input("Enter pet name: ")
+#         petList.append(name) # adding names into list each time the loop runs
+#         print("The name of your pets are: ") # for loop finishes so indentation comes back
+#     for pet in range(totalPets): # 2nd loop to print out each item in the list
+#         print(petList[pet])
+# else: # executes only if the user has no pets
+#     print("Why don't you have a pet?")
+
+# Task # 
+hours = [12, 7, 9, 9, 6, 8, 2]
+totalMilk = 0
+totalMilkCost = 0 # defines list and variables
+
+for day in range(len(hours)): # loops for every item in the list
+    totalMilk += (hours[day] * 0.5) # adds the current day's milk to total milk
+    totalMilkCost = totalMilk * 1.35 # gets total milk cost
+
+print("The total milk drank in litres is", totalMilk)
+print("The total cost for the milk is €" + str(totalMilkCost)) # prints total cost, converts total milk cost to str because you cant concatinate a str and int
